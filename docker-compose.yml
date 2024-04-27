@@ -1,0 +1,24 @@
+version: '3.2'
+services:
+  wallet:
+    image: postgres:10.4
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: wallet
+    volumes:
+      - .wallet-data:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+
+    networks:
+      - wallet
+
+networks:
+  wallet:
+    driver: bridge
+   
+volumes:
+  wallet-data:
+    driver: local

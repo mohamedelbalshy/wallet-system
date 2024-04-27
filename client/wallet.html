@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet Balance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="send_money.html">Send Money</a></li>
+            <li><a href="save_card.html">Save Card</a></li>
+            <li><a href="wallet.html">Wallet</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Wallet Balance</h1>
+        <div class="form-group">
+            <label for="userId">User Id</label>
+            <input type="text" id="userId" class="user-input" required>
+        </div>
+        <div id="balance"></div>
+        <button onclick="fetchBalance()">Get Balance</button>
+    </div>
+    <script src="wallet.js"></script>
+</body>
+
+</html>

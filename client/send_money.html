@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Money</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="send_money.html">Send Money</a></li>
+            <li><a href="save_card.html">Save Card</a></li>
+            <li><a href="wallet.html">Wallet</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Send Money</h1>
+        <div>
+            <label for="from">Sender ID:</label>
+            <input type="text" id="from" placeholder="Enter sender ID">
+        </div>
+        <div>
+            <label for="to">Recipient ID:</label>
+            <input type="text" id="to" placeholder="Enter recipient ID">
+        </div>
+        <div>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+        </div>
+        <button onclick="sendMoney()">Send Money</button>
+        <p id="message"></p>
+    </div>
+    <script src="send_money.js"></script>
+</body>
+
+</html>
